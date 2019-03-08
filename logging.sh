@@ -1,9 +1,9 @@
 #!/bin/bash
 
 #------------------------------------------------------------------------------------
-# @author 		Guillaume Plante <g.plante@robotiq.com>
+# @author 		Guillaume Plante <radicaltronic@gmail.com>
 # @description	Logging Utility used by the different deamon scripts.
-# @copyright	2018 Robotiq.inc
+# @copyright    2018 GNU GENERAL PUBLIC LICENSE v3
 #------------------------------------------------------------------------------------
 
 #-------------------------------
@@ -14,7 +14,7 @@ LOG_LEVELS=([DEBUG]=7 [INFO]=6 [NOTICE]=5 [WARNING]=4 [ERROR]=3 [CRITICAL]=2 [AL
 #--------------------------------------------------------------
 # Current (default) filter level
 LOG_LEVEL=${LOG_LEVELS[WARNING]}
-LOG_DIRECTORY=/var/log/robotiq
+LOG_DIRECTORY=.
 LOG_FILE="$LOG_DIRECTORY/daemons.log"
 
 if [ ! -d "$LOG_DIRECTORY" ]; then

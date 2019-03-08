@@ -31,7 +31,7 @@ WAIT_TIME=15 # seconds to wait for process
 # Crash dump directory and filename 
 # core.%e.%p.%s.%i.%t : executable.pid.signal number.ThreadID.UNIX time of dump
 
-CRASHDUMP_FOLDER=/tmp/cores
+CRASHDUMP_FOLDER=cores
 mkdir -p ${CRASHDUMP_FOLDER}
 sysctl -w kernel.core_pattern=${CRASHDUMP_FOLDER}/core.%e.%p.%s.%i.%t >nul
 
