@@ -14,7 +14,7 @@ LOG_LEVELS=([DEBUG]=7 [INFO]=6 [NOTICE]=5 [WARNING]=4 [ERROR]=3 [CRITICAL]=2 [AL
 #--------------------------------------------------------------
 # Current (default) filter level
 LOG_LEVEL=${LOG_LEVELS[WARNING]}
-LOG_DIRECTORY=.
+LOG_DIRECTORY=log
 LOG_FILE="$LOG_DIRECTORY/daemons.log"
 
 if [ ! -d "$LOG_DIRECTORY" ]; then
